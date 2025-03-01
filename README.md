@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# AI-Powered Trade Recommendation Engine
+This application helps homeowners find the right trade professionals by analysing their home improvement problems in natural language. 
+The application is currently deployed on Google Cloud Run at: https://checkatrade-app-502792768465.us-central1.run.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+Natural language input for home improvement problems
+AI-powered classification of the problem
+Recommendation of relevant trades
+Storage of queries and recommendations in Firestore
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+Frontend: React with TypeScript
+Backend: Node.js with Express
+AI: OpenAI API (GPT-3.5 Turbo)
+Database: Firebase Firestore
 
-### `npm start`
+## Setup Instructions
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Node.js and npm installed
+OpenAI API key
+Firebase project with Firestore enabled
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Backend Setup
 
-### `npm test`
+Navigate to the server directory:
+Copycd server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies:
+Copynpm install
 
-### `npm run build`
+Create a .env file with the following variables:
+CopyOPENAI_API_KEY=your_openai_api_key
+FIREBASE_SERVICE_ACCOUNT="your_firestore_generated_json"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the development server:
+Copynpm run dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend Setup
 
-### `npm run eject`
+Navigate to the client directory:
+Copycd client
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install dependencies:
+Copynpm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the development server:
+Copynpm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application should now be running at http://localhost:8080
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+client/: React frontend application
+server/: Node.js backend API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is part of a technical assessment for Checkatrade Labs.
