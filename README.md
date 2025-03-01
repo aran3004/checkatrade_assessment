@@ -25,29 +25,29 @@ Firebase project with Firestore enabled
 ### Backend Setup
 
 Navigate to the server directory:
-Copycd server
+cd server
 
 Install dependencies:
-Copynpm install
+npm install
 
 Create a .env file with the following variables:
-CopyOPENAI_API_KEY=your_openai_api_key
+OPENAI_API_KEY=your_openai_api_key
 FIREBASE_SERVICE_ACCOUNT="your_firestore_generated_json"
 
 Start the development server:
-Copynpm run dev
+npm run dev
 
 
 ### Frontend Setup
 
 Navigate to the client directory:
-Copycd client
+cd client
 
 Install dependencies:
-Copynpm install
+npm install
 
 Start the development server:
-Copynpm start
+npm start
 
 The application should now be running at http://localhost:8080
 
